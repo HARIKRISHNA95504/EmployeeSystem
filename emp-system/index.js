@@ -4,6 +4,8 @@ const app = express()
 
 
 const employeeRouter = require('./routers/employee.router')
+const cors = require("cors");
+app.use(cors());
 
 app.use(express.json())
 app.get('/',(request,response)=>{
