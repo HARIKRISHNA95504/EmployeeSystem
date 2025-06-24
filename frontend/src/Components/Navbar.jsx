@@ -4,6 +4,7 @@ import "../Styles/Navbar.css";
 import home from "../Assets/home.png";
 import logo from "../Assets/logo.png";
 import add from "../Assets/add.png";
+import menu from "../Assets/menu.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
       <div className="brand">EmpSys</div>
 
       <div className="nav-toggle" onClick={toggleNav}>
-        ☰
+        <img src={menu} alt="Home" className="nav-icon" />
       </div>
 
       <div className={`nav-links ${isOpen ? "active" : ""}`}>
